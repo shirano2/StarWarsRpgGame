@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>starWarsRpgGame</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+img {
+    width:100px;
+    height:40px;
+}
+.kenobi, .skywalker, .sidious, .maul {
+    width:10%;
+    float:left;
+    height:150px;
+    border:1px solid blue;
+    text-align:center;
+}
+img{
+    display:block;
+    width:95%;
+    margin:auto;
+}
+.you {
+    clear:both;
+    width:10%;
+    height:150px;
+}
+</style>
+<script>
+$(document).ready(function(){
+    var characterArray=[];
+    var obiWan = {
+        "Name":"Obi-Wan Kenobi",
+        "Health Points":120,
+        "Attack Power":8,
+        "Counter Attack":24
+    }
+    var luke = {
+        "Name":"Luke Skywalker",
+        "Health Points":100,
+        "Attack Power":6,
+        "Counter Attack":5
+    }
+    var darth1 = {
+        "Name":"Darth Sidious",
+        "Health Points":150,
+        "Attack Power":10,
+        "Counter Attack":20
+    }
+    var darth2 = {
+        "Name":"Darth Maul",
+        "Health Points":180,
+        "Attack Power":12,
+        "Counter Attack":25
+    }
+    var jewelNumber=Math.floor(Math.random()*12+1);
+});
+</script>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>starWarsRpgGame</h1>
+        </header>
+        <!--display:none이 젤 편한듯-->
+        <!--push.length ==4를 게임 종료 조건으로 ...-->
+        <!--각 캐릭터의 특성치를 object로-->
+
+        <div class="contents">
+            <div class="four-images">
+                <div class="kenobi">Obi-Wan Kenobi<img src="assets/images/rubi.jpg"><span class="HP">120</span></div>
+                <div class="skywalker">Luke Skywalker<img src="assets/images/diamond.jpg"><span class="HP">100</span></div>
+                <div class="sidious">Darth Sidious<img src="assets/images/emerald.png"><span class="HP">150</span></div>
+                <div class="maul">Darth Maul<img src="assets/images/sapphire.jpg"><span class="HP">180</span></div>
+            </div>
+            <div class="you">
+                <h1>Your Character</h1><!--크기 고정-->
+            </div>
+            <div class="choose">
+                <h1>Enermies Available To Attack</h1><!--크기 고정-->
+            </div>
+            <div class="button">
+                <button class="Attack">Attack</button>
+            </div>
+            <div class="enermy">
+                <h1>Defender</h1><!--크기 고정-->
+            </div>
+            <div class="result">
+                <div id="message"></div>
+                <div>Wins : <span id="win">0</span></div>
+                <div>Losses : <span id="lose">0</span></div>
+            </div>
+            <div class="user-score">
+                <h2>Your total score is : <span id="total">0</span></h2>
+            </div>
+            
+            
+        </div>
+    </div>  
+</body>
+</html>
