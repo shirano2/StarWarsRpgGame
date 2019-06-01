@@ -2,7 +2,7 @@
 
 This game is for StarWars fan.
 
-At the beginning, you have to choose one character. And you have to choose your enermy.
+At the beginning, you have to choose one character. And you have to choose your enemy.
 
 Your character will be stronger every time attacking someone or defeating someone.
 
