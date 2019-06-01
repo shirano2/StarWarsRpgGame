@@ -18,7 +18,7 @@ https://shirano2.github.io/unit-4-game/
 
 * HTML5
 * CSS3
-* jQuery
+* JQuery
 * Javascript
 
 
